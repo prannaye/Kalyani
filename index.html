@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stock Tracker</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1 id="head">📊 Stock Tracker</h1>
+    <button id="theme-toggle">🌓</button>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <input type="text" id="stock-symbol" placeholder="Enter Stock Symbol (e.g. TCS.BSE)" />
+      <button onclick="fetchStockData()">Track</button>
+    </section>
+
+    <section class="stock-info">
+      <h2 id="stock-name"></h2>
+      <p>Current Price: <span id="current-price">--</span></p>
+      <p>Change: <span id="price-change">--</span></p>
+    </section>
+
+    <section class="chart-container">
+      <canvas id="stock-chart"></canvas>
+    </section>
+
+    <section class="news-section">
+      <h3>Latest News</h3>
+      <ul id="news-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built for Hackathon 🚀</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
