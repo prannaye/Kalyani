@@ -1,6 +1,6 @@
 
 const alphaKey = "88a8682639ff45bdb7bd28d49cc9aeab";
-const gnewsKey = "demo"; // Use 'demo' key or replace with your own
+//sconst gnewsKey = "demo"; // Use 'demo' key or replace with your own
 
 async function fetchStockData() {
   const symbol = document.getElementById("stock-symbol").value.trim();
