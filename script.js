@@ -1,6 +1,6 @@
 
 const alphaKey = "88a8682639ff45bdb7bd28d49cc9aeab";
-//sconst gnewsKey = "demo"; // Use 'demo' key or replace with your own
+
 
 async function fetchStockData() {
   const symbol = document.getElementById("stock-symbol").value.trim();
@@ -80,7 +80,7 @@ async function fetchNews(symbol) {
   });
 }
 
-// Dark/light theme toggle
+
 document.getElementById("theme-toggle").onclick = () => {
   document.body.classList.toggle("dark");
 }
